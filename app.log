@@ -1,0 +1,8 @@
+2024-10-08T05:37:48.911Z [ERROR] Requested api not found: GET /uploads/users/profileimage-1725947675852.jpg (Status Code: 404) (Error Path: /uploads/users/profileimage-1725947675852.jpg)
+2024-10-08T05:21:09.336Z [ERROR] bookinged-exists (Status Code: 409) (Error Path: /api/v1/bookings)
+2024-10-08T05:20:18.073Z [ERROR] Requested api not found: GET /uploads/users/profileimage-1725947675852.jpg (Status Code: 404) (Error Path: /uploads/users/profileimage-1725947675852.jpg)
+2024-10-08T05:19:30.229Z [ERROR] Requested api not found: GET /uploads/users/profileimage-1725947675852.jpg (Status Code: 404) (Error Path: /uploads/users/profileimage-1725947675852.jpg)
+2024-10-08T05:18:40.004Z [ERROR] Requested api not found: GET /uploads/users/profileimage-1725947675852.jpg (Status Code: 404) (Error Path: /uploads/users/profileimage-1725947675852.jpg)
+2024-10-08T04:46:25.160Z [ERROR] bookinged-exists (Status Code: 409) (Error Path: /api/v1/bookings)
+2024-10-08T04:45:54.197Z [ERROR] bookinged-exists (Status Code: 409) (Error Path: /api/v1/bookings)
+2024-10-08T04:45:35.613Z [ERROR] bookinged-exists (Status Code: 409) (Error Path: /api/v1/bookings)
