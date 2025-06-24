@@ -186,7 +186,7 @@ function serverHomePage(req, responseTimes) {
       </head>
       <body>
         <div class="container animate__animated animate__bounce">
-          <h1>${req.t(`${process.env.PROJECT_NAME} Server is alive!`)}</h1>
+          <h1>${req.t(`${process.env.PROJECT_NAME} Server is alive working!`)}</h1>
           <p>Welcome to our awesome server!</p>
           <div id="response-times">
             <h2>API Response Times</h2>
