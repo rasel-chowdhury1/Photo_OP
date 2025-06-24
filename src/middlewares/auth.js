@@ -27,10 +27,13 @@ const tokenCheck = catchAsync(
     const { signuptoken } = req.headers;
     if (signuptoken && signuptoken.startsWith("signUpToken ")) {
       const token = signuptoken.split(" ")[1];
+      console.log({token})
       let decodedData = {};
       if (token && token !== undefined && token !== null && token !== "null") {
         decodedData = jwt.verify(token, process.env.JWT_ACCESS_TOKEN);
       }
+
+      console.log({decodedData})
       req.body.userData = decodedData;
     }
     next();

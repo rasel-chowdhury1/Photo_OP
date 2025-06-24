@@ -23,6 +23,8 @@ const signUp = catchAsync(async (req, res) => {
   }
   else {
     const otpData = await sendOTP(fullName, email, 'email', otpPurpose);
+
+    console.log({otpData})
     if (otpData) {
       message = req.t('otp-sent');
     }
@@ -55,8 +57,8 @@ const signIn = catchAsync(async (req, res) => {
 
 const validateEmail = catchAsync(async (req, res) => {
   var otpPurpose = 'email-verification';
+  console.log("body data ===>> ", req.body)
   const { otp, userData } = req.body;
-  console.log(userData);
   const otpData = await verifyOTP(userData.email, 'email', otpPurpose, otp);
   if (!otpData) {
     return res.status(400).json(response({ status: 'Error', statusCode: '400', type: 'user', message: req.t('invalid-otp') }));
