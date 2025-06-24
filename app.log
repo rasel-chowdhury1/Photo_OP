@@ -1,3 +1,4 @@
+2025-06-24T10:52:45.914Z [ERROR] SIGINT (Error Path: --- graceful shutdown ---)
 2025-06-24T10:03:17.382Z [ERROR] jwt expired (Status Code: 500) (Error Path: /api/v1/users/verify-email)
 2025-06-24T10:00:10.646Z [ERROR] Requested api not found: GET /favicon.ico (Status Code: 404) (Error Path: /favicon.ico)
 2025-06-23T16:10:48.909Z [ERROR] SIGINT (Error Path: --- graceful shutdown ---)
