@@ -10,6 +10,7 @@ function validateEmail(email) {
 }
 
 const validationMiddleware = catchAsync(async (req, res, next) => {
+
   const { fullName, password, email, phoneNumber } =
     req.body;
   let errors = [];
