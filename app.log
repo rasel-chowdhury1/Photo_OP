@@ -1,3 +1,8 @@
+2025-10-08T07:27:34.915Z [ERROR] res is not defined (Status Code: 500) (Error Path: /api/v1/users/sign-up)
+2025-10-08T07:25:27.362Z [ERROR] res is not defined (Status Code: 500) (Error Path: /api/v1/users/sign-up)
+2025-10-06T05:22:22.834Z [ERROR] res is not defined (Status Code: 500) (Error Path: /api/v1/users/sign-up)
+2025-10-06T05:16:54.183Z [ERROR] Requested api not found: GET /favicon.ico (Status Code: 404) (Error Path: /favicon.ico)
+2025-09-22T06:02:33.815Z [ERROR] Requested api not found: GET /favicon.ico (Status Code: 404) (Error Path: /favicon.ico)
 2025-07-04T12:43:31.822Z [ERROR] SIGINT (Error Path: --- graceful shutdown ---)
 2025-07-04T12:37:34.684Z [ERROR] SIGINT (Error Path: --- graceful shutdown ---)
 2025-07-04T12:35:09.153Z [ERROR] Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to
