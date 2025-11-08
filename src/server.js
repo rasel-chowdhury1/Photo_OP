@@ -33,12 +33,12 @@ async function myServer() {
     await mongoose.connect(process.env.MONGODB_CONNECTION);
 
     // Start Express server
-    server = app.listen(port, serverIP, () => {
+    server = app.listen(port, "0.0.0.0", () => {
       console.dir(`---> Photo OP server is listening on : http://${serverIP}:${port}`);
     });
 
     // Start Socket.io server
-    socketServer.listen(socketPort, serverIP, () => {
+    socketServer.listen(socketPort, "0.0.0.0", () => {
       console.dir(`---> Socket server is listening on   : http://${serverIP}:${socketPort}`);
     });
 
