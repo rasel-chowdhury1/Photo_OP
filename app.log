@@ -1,3 +1,5 @@
+2025-11-08T10:43:43.692Z [ERROR] conso is not defined (Status Code: 500) (Error Path: ---server.js---)
+2025-11-08T10:42:17.871Z [ERROR] SIGINT (Error Path: --- graceful shutdown ---)
 2025-10-08T07:27:34.915Z [ERROR] res is not defined (Status Code: 500) (Error Path: /api/v1/users/sign-up)
 2025-10-08T07:25:27.362Z [ERROR] res is not defined (Status Code: 500) (Error Path: /api/v1/users/sign-up)
 2025-10-06T05:22:22.834Z [ERROR] res is not defined (Status Code: 500) (Error Path: /api/v1/users/sign-up)

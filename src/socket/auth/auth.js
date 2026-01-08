@@ -2,6 +2,8 @@ const jwt = require("jsonwebtoken");
 const logger = require("../../helpers/logger");
 
 const socketAuthMiddleware = (socket, next) => {
+
+  console.log("socketAuthMiddleware", socket.handshake.headers.token);
   const token = socket.handshake.headers.authorization;
   if (!token) {
     return next(new Error('Authentication error: Token not provided.'));

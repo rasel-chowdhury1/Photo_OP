@@ -5,6 +5,7 @@ const addNewMessage = require("./features/addNewMessage");
 const getActiveUsers = require("./features/getActiveUsers")
 
 const socketIO = (io) => {
+
   //initialize an object to store the active users
   let activeUsers = {};
 
