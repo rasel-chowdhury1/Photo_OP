@@ -18,6 +18,7 @@ const notificationRoutes = require('../modules/Notification/notification.route')
 const chatRoutes = require('../modules/Chat/chat.route');
 const messageRoutes = require('../modules/Message/message.route');
 const picUploadRoutes = require('../modules/PicUpload/picUpload.route');
+const staticPagesRoutes = require('../modules/StaticPages/staticPages.route');
 
 const moduleRoutes = [
   {
@@ -83,6 +84,11 @@ const moduleRoutes = [
   {
     path: '/pic-uploads',
     route: picUploadRoutes,
+  },
+
+  {
+    path: "/settings",
+    route: staticPagesRoutes
   }
 ];
 

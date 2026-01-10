@@ -2,3 +2,5 @@ Route                                     Response Time (ms)     Label/api/v1/us
 /api/v1/users/sign-up                   1105.16             High      
 /api/v1/users/sign-up                   3124.19             High      
 /api/v1/users/verify-otp                77.37               Low       
+/api/v1/settings/privacy-policy         3.85                Low       
+/api/v1/settings/support                1.09                Low       
