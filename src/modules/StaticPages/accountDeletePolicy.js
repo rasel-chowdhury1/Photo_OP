@@ -69,13 +69,13 @@ export const getStaticAccountDeletePolicy = (_req, res) => {
   <div class="step">
     <h2>Step 1: Open Settings</h2>
     <p>Go to your profile and tap <strong>Settings</strong>.</p>
-    <img src="/uploads/static/setting.png" alt="Open Settings" class="illustration">
+    <img src="https://res.cloudinary.com/dns84qf2p/image/upload/settting_kpovfr.png" alt="Open Settings" class="illustration">
   </div>
 
   <div class="step">
     <h2>Step 2: Choose “Delete Account”</h2>
     <p>Scroll to the bottom and tap <strong>Delete Account</strong>.</p>
-    <img src="/uploads/static/delete.png" alt="Choose Delete Account" class="illustration">
+    <img src="https://res.cloudinary.com/dns84qf2p/image/upload/delete_sbcwn7.png" alt="Choose Delete Account" class="illustration">
   </div>
 
   <div class="step">
@@ -84,7 +84,7 @@ export const getStaticAccountDeletePolicy = (_req, res) => {
       When prompted, enter your account password or complete the required
       verification to confirm your identity.
     </p>
-    <img src="/uploads/static/inputDelete.png" alt="Confirm Identity" class="illustration">
+    <img src="https://res.cloudinary.com/dns84qf2p/image/upload/inputDelete_tutwii.png" alt="Confirm Identity" class="illustration">
   </div>
 
 
