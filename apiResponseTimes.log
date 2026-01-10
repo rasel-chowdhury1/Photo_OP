@@ -4,3 +4,4 @@ Route                                     Response Time (ms)     Label/api/v1/us
 /api/v1/users/verify-otp                77.37               Low       
 /api/v1/settings/privacy-policy         3.85                Low       
 /api/v1/settings/support                1.09                Low       
+/api/v1/settings/delete-account         2.79                Low       
