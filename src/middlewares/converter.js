@@ -58,6 +58,8 @@ const convertHeicToPng = (UPLOADS_FOLDER) => {
       }
     }
 
+    console.log("req files =>>>> ", req.files)
+
     next();
   };
 };

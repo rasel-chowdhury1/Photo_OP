@@ -173,6 +173,8 @@ const updateProfile = catchAsync(async (req, res) => {
       user.identityImage = `/uploads/users/${identityImage[0].filename}`
     }
   }
+
+  console.log("users =>> ", user)
   const updatedUser = await user.save();
   return res.status(200).json(response({ status: 'OK', statusCode: '200', type: 'user', message: req.t('user-updated'), data: updatedUser }));
 })

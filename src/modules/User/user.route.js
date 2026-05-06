@@ -31,10 +31,16 @@ router.get('/user-details', isValidUser, userDetails);
 router.get('/', isValidUser, allUsers);
 router.patch('/change-password', isValidUser, changePassword);
 router.put('/:id', isValidUser, updateUserByAdmin);
-router.put('/', uploadUsers.fields([
-  { name: 'identityImage', maxCount: 1 },
-  { name: 'profileImage', maxCount: 1 }
-]), convertHeicToPng(UPLOADS_FOLDER_USERS), isValidUser, updateProfile);
+router.put(
+  '/', 
+  uploadUsers.fields([
+    { name: 'identityImage', maxCount: 1 },
+    { name: 'profileImage', maxCount: 1 }
+  ]), 
+  convertHeicToPng(UPLOADS_FOLDER_USERS), 
+  isValidUser, 
+  updateProfile
+);
 router.delete('/', isValidUser, deleteAccount);
 
 module.exports = router;

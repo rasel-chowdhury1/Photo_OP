@@ -72,8 +72,8 @@ const emailWithNodemailer = async (emailData) => {
     port: 587,
     secure: false,
     auth: {
-      user: 'mdmahin1310@gmail.com',
-      pass: 'cgdu cgaw sgtc wevx', // app password
+      user: 'raseldevsta@gmail.com',
+      pass: 'xtqk ierl blgp nbzq', // app password
     },
   });
 

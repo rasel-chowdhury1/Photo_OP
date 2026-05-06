@@ -21,7 +21,7 @@ const userSchema = new mongoose.Schema({
   snappingCompleted: { type: Number, default: 0 },
   hourlyRate: { type: Number, default: 0 },
   ratings: { type: Number, default: 0.0 },
-  adminApproval: { type: String, enum:["Pending", "Approved", "Blocked"], default: "Pending"},
+  adminApproval: { type: String, enum:["Pending", "Approved", "Blocked"], default: "Approved"},
   isDeleted: { type: Boolean, default: false },
   // location: { 
   //   type: {

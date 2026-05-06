@@ -26,15 +26,22 @@ module.exports = {
     rules: [
       // Babel loader configuration
       {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: ['@babel/preset-env']
+  test: /\.js$/,
+  exclude: /node_modules/,
+  use: {
+    loader: 'babel-loader',
+    options: {
+      presets: [
+        [
+          '@babel/preset-env',
+          {
+            modules: 'commonjs' // 🔥 important fix
           }
-        }
-      }
+        ]
+      ]
+    }
+  }
+}
     ]
   }
 };
