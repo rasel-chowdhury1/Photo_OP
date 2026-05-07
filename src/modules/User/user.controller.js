@@ -22,12 +22,8 @@ const signUp = catchAsync(async (req, res) => {
     message = req.t('otp-exists');
   }
   else {
-    const otpData = await sendOTP(fullName, email, 'email', otpPurpose);
-
-    console.log({otpData})
-    if (otpData) {
-      message = req.t('otp-sent');
-    }
+    sendOTP(fullName, email, 'email', otpPurpose).catch(err => console.error('sendOTP error:', err));
+    message = req.t('otp-sent');
   }
 
   const signUpData = { fullName, email, phoneNumber, password, role, countryCode, address, postCode, area, roadNo, city }
