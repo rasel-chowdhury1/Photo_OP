@@ -80,7 +80,7 @@ const emailWithNodemailer = async (emailData) => {
   try {
     console.log('Mail send started...');
     await transporter.sendMail({
-      from: 'mdmahin1310@gmail.com',
+      from: 'raseldevsta@gmail.com',
       to: emailData.email,
       subject: emailData.subject,
       text: '', // optional

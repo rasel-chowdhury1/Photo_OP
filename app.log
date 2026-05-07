@@ -1,3 +1,4 @@
+2026-05-06T05:01:46.889Z [ERROR] User not found (Status Code: 404) (Error Path: /api/v1/users/sign-in)
 2026-05-06T04:21:05.302Z [ERROR] listen EADDRINUSE: address already in use 0.0.0.0:3020 (Status Code: 500) (Error Path: --- graceful shutdown ---)
 2026-05-06T04:21:05.300Z [ERROR] listen EADDRINUSE: address already in use 0.0.0.0:3010 (Status Code: 500) (Error Path: --- graceful shutdown ---)
 2026-05-06T04:20:46.809Z [ERROR] listen EADDRINUSE: address already in use 0.0.0.0:3020 (Status Code: 500) (Error Path: --- graceful shutdown ---)
