@@ -3,18 +3,31 @@ const response = require("../helpers/response");
 const catchAsync = require('../helpers/catchAsync');
 
 const isValidUser = catchAsync(async (req, res, next) => {
+
+  
   const { authorization } = req.headers;
-  let token;
+
   let decodedData;
+
+  if (authorization === "Guest") {
+    return next();
+  }
+
   if (authorization && authorization.startsWith("Bearer")) {
-    token = authorization.split(" ")[1];
-    if (token && token !== undefined && token !== null && token !== "null") {
-      decodedData = jwt.verify(token, process.env.JWT_ACCESS_TOKEN);
+    const token = authorization.split(" ")[1];
+    if (token && token !== "null") {
+      try {
+        decodedData = jwt.verify(token, process.env.JWT_ACCESS_TOKEN);
+      } catch (err) {
+        return res.status(401).json(response({ status: 'Unauthorised', statusCode: '401', type: 'auth', message: req.t('unauthorised') }));
+      }
     }
   }
-  if (!authorization || !decodedData) {
+
+  if (!decodedData) {
     return res.status(401).json(response({ status: 'Unauthorised', statusCode: '401', type: 'auth', message: req.t('unauthorised') }));
   }
+
   req.body.userId = decodedData._id;
   req.body.userRole = decodedData.role;
   req.body.userEmail = decodedData.email;

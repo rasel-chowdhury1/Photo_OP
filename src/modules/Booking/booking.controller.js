@@ -55,10 +55,10 @@ const getBookingDetails = catchAsync(async (req, res) => {
 });
 
 const getAllBookingsForsnapper = catchAsync(async (req, res) => {
-  console.log(req.body.userId);
-  let filter = {
-    snapper: req.body.userId
-  };
+  let filter = {};
+  if (req.body.userId) {
+    filter.snapper = req.body.userId;
+  }
   const options = {
     limit: Number(req.query.limit) || 10,
     page: Number(req.query.page) || 1,

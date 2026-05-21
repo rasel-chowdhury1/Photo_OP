@@ -15,6 +15,7 @@ const { getLimitedPortFolios } = require('../Portfolio/portfolio.service');
 //Sign up
 const signUp = catchAsync(async (req, res) => {
   var otpPurpose = 'email-verification';
+
   var { fullName, email, phoneNumber, password, role, countryCode, address, postCode, area, roadNo, city } = req.body;
   const existingOTP = await checkOTPByEmail(email);
   var message = req.t('otp-sent');
