@@ -41,12 +41,12 @@ const validationMiddleware = catchAsync(async (req, res, next) => {
     errors.push({ field: "password", message: req.t("password-format-error") });
   }
 
-  if (!phoneNumber) {
-    errors.push({
-      field: "phoneNumber",
-      message: req.t("phone-number-required"),
-    });
-  }
+  // if (!phoneNumber) {
+  //   errors.push({
+  //     field: "phoneNumber",
+  //     message: req.t("phone-number-required"),
+  //   });
+  // }
 
   if (Object.keys(errors).length !== 0) {
     logger.error("Sign up validation error", "sign-up middleware");

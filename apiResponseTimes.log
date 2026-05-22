@@ -6,3 +6,4 @@ Route                                     Response Time (ms)     Label/api/v1/us
 /api/v1/settings/support                1.09                Low       
 /api/v1/settings/delete-account         2.79                Low       
 /api/v1/users/sign-up                   2694.22             High      
+/api/v1/users/sign-up                   96.23               Low       

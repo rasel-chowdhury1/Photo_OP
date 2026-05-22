@@ -1,3 +1,7 @@
+2026-05-22T10:32:39.094Z [ERROR] SIGINT (Error Path: --- graceful shutdown ---)
+2026-05-22T10:31:34.321Z [ERROR] Sign up validation error (Error Path: sign-up middleware)
+2026-05-22T10:30:29.572Z [ERROR] Requested api not found: GET /favicon.ico (Status Code: 404) (Error Path: /favicon.ico)
+2026-05-21T04:39:00.816Z [ERROR] SIGINT (Error Path: --- graceful shutdown ---)
 2026-05-21T04:34:51.866Z [ERROR] Requested api not found: GET /uploads/users/profileimage-1778131415565.jpg (Status Code: 404) (Error Path: /uploads/users/profileimage-1778131415565.jpg)
 2026-05-21T04:34:51.606Z [ERROR] Requested api not found: GET /uploads/portfolios/identityimage-1778131685954.webp (Status Code: 404) (Error Path: /uploads/portfolios/identityimage-1778131685954.webp)
 2026-05-21T04:34:51.589Z [ERROR] Requested api not found: GET /uploads/portfolios/identityimage-1778131641592.png (Status Code: 404) (Error Path: /uploads/portfolios/identityimage-1778131641592.png)
